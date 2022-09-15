@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.credits { 
+    font-size: 11px; 
+    margin-top: -90px;
+}
+
+
+body{
+    text-align: center;
+    
+}
+/* using grid for responsiveness */
+.parent{
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 250px;
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+    .parent{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 30px 10px;
+        
+    }
+
+    .container1{
+        padding: 15px;      
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0px;
+        
+    }
+    .container2{
+        
+        padding: 15px;  
+    }
+    .container3{
+        padding: 15px;  
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+        
+    }
+    
+   .credits { 
+    font-size: 11px; 
+    margin-top: -35px;
+     }
+    
+}
+
+.container1{
+    background-color: hsl(31, 77%, 52%);
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;   
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    
+}
+
+.container2{
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;   
+    
+}
+.container3{
+    background-color: hsl(179, 100%, 13%);
+    padding: 20px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.logo{
+    margin: 20px;
+}
+
+
+.name{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    margin: 0 20px;
+}
+
+.details{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color :  hsla(0, 0%, 100%, 0.75);
+    line-height: 1.2;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.more-btns{
+    font-family: 'Lexend Deca', sans-serif;
+    width: fit-content;
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.5s linear;
+}
+
+.one:hover{
+    color: orange;
+    background-color: white;
+}
+
+.two:hover{
+    color: hsl(184, 100%, 22%);
+    background-color: white;
+}
+.three:hover{
+    color: hsl(179, 100%, 13%);
+    background-color: white;
+}
+
